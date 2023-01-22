@@ -9,9 +9,10 @@ import org.springframework.web.servlet.ModelAndView;
 
 @Controller
 public class HelloController {
-
-    @RequestMapping("/")
-    @ResponseBody
+    
+    @RequestMapping(value ="/", method = RequestMethod.GET)
+    s
+    
     public String index() {
         return "Hello, Spring";
     }
