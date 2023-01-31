@@ -16,10 +16,6 @@ public class CommonCodeOurService {
     @Autowired
     CommonCodeOurDao commonCodeOurDao;
 
-   
-
-    
-
     public Object deleteAndGetList(Object dataMap){
         Object result = this.delete(dataMap);
         result = this.getList(dataMap);
